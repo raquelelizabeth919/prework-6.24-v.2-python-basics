@@ -45,11 +45,11 @@ print(max_num_in_list(numbers))
 
 def is_leap_year(a_year):
         if a_year % 4 == 0:
-                if a_year % 100 == 0:
-                        if a_year % 400 == 0:
-                                return True
-                        else:
+                if a_year % 400 == 0:
+                        if a_year % 100 == 0:
                                 return False
+                        else:
+                                return True
           
 print(is_leap_year(2021))
 print(is_leap_year(2020))

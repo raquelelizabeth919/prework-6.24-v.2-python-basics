@@ -13,8 +13,17 @@ Ralph = hello_name('ralphlauren15')
 # Question 2
 # Write a python function, first_odds that prints the odd numbers from 1-100 and returns nothing
 
-#     def first_odds():
-#         .....
+def first_odds(current_number):
+        """Odds from 1-100"""
+        current_number = 0
+        while current_number < 100:
+                current_number += 1
+                if current_number % 2 == 0:
+                        continue
+                print(current_number)
+                
+number = first_odds(1)
+               
                
 # Question 3
 # Please write a Python function, max_num_in_list to return the max number of a given list. The first line of the code has been defined as below.

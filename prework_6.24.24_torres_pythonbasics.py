@@ -10,7 +10,6 @@ def hello_name(user_name):
 Ralph = hello_name('ralphlauren15')
 
 
-print()
 # Question 2
 # Write a python function, first_odds that prints the odd numbers from 1-100 and returns nothing
 
@@ -24,9 +23,8 @@ def first_odds(current_number):
                 print(current_number)
                 
 number = first_odds(1)
-               
-
-print()           
+     
+  
 # Question 3
 # Please write a Python function, max_num_in_list to return the max number of a given list. The first line of the code has been defined as below.
 
@@ -42,7 +40,6 @@ numbers = [5, 7, 10, 1, 3, 24, 13, 70, 33]
 print(max_num_in_list(numbers))
 
 
-print()
 # Question 4
 # Write a function to return if the given year is a leap year. A leap year is divisible by 4, but not divisible by 100, unless it is also divisible by 400. The return should be boolean Type (true/false).
 

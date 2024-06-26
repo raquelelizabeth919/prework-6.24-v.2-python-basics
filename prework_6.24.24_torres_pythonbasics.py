@@ -45,16 +45,12 @@ print(max_num_in_list(numbers))
 
 def is_leap_year(a_year):
         """Is it a leap year?"""
-        if a_year % 4 == 0:
-                if a_year % 400 == 0:
-                        if a_year % 100 == 0:
-                                return False
-                        else:
-                                return True
+        if (a_year % 4 == 0 and a_year % 100 != 0) or (a_year % 400 == 0):
+                return True
+        else:
+                return False
           
-print(is_leap_year(2021))
-print(is_leap_year(2020))
-# I could not figure this one out
+print(is_leap_year(2001))
 
 
 # Question 5
@@ -63,13 +59,10 @@ print(is_leap_year(2020))
 def is_consecutive(a_list):
         """Is the list consecutive"""
         a_list.sort()
-        for number in range(len(a_list)):
+        for number in range(len(a_list) - 1):
                 if a_list[number] + 1 != a_list[number + 1]:
-                        return True
-                else:
                         return False
+        return True
                 
-argument = [1,5,6,7,8]
-argument2 = [9,10,11,12]
+argument = [4,5,6,7,8,13]
 print(is_consecutive(argument))
-print(is_consecutive(argument2))
